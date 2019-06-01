@@ -382,11 +382,12 @@
         });
     </script>
     <script>
-            $(window).resize(function () {
-                console.log($(window).width());
-                console.log($(window).height());
-            });
-      
+            // $(window).resize(function () {
+                console.log($(document).width());
+                console.log($(document).height());
+            // });
+            let height=$(document).height()
+                $(".appnew").css("min-height",height)
 
     </script>
 </body>
