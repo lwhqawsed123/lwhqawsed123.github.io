@@ -1,0 +1,394 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>高颜值一对一私密视频聊天</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #app {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+
+            background-image: url(static/images/bg6.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .appDownLoad {
+            position: absolute;
+            width: 100%;
+            bottom: 20px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .appDownLoad {
+            height: 108px;
+            color: #ffffff;
+            font-size: 0px;
+            text-align: center;
+        }
+
+        .appDownLoad img {
+            width: 277px;
+            position: relative;
+            bottom: 10px;
+        }
+
+        .appnew {
+            position: fixed;
+            width: 100%;
+            background: #feaaa8;
+            min-height: 100%;
+
+        }
+
+        .appnew .box {
+            position: relative;
+            width: 100%;
+        }
+
+        .appnew img.bg {
+            width: 100%;
+        }
+
+        .appnew .content {
+            position: absolute;
+            top: 19%;
+            width: 86%;
+            left: 50%;
+            margin-left: -43%;
+        }
+
+        .appnew img.yhtb {
+            width: 100%;
+
+        }
+
+        .appDownLoadnew {
+            position: absolute;
+            text-align: center;
+            bottom: 2%;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .appDownLoadnew img {
+            width: 60%;
+        }
+
+        .appDownLoadnew .shuomin {
+            color: #ffffff;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 12px;
+        }
+
+        .appDownLoadnew .home {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .appDownLoadnew .jingao {
+            width: 200px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            margin: 0 auto;
+            
+        }
+
+        .appDownLoadnew .jingao span {
+            display: inline-block;
+            height: 20px;
+            font-weight: 700;
+            color: #ffffff;
+            font-size: 18px;
+        }
+
+        .none {
+            display: none;
+        }
+
+        .zhiying_img {
+            display: none;
+            position: relative;
+            top: 0;
+            width: 100%;
+            background: #ffffff;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .zhiying_img img {
+            width: 80%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .zhiying_img div {
+            width: 90%;
+            margin: 10px auto 0;
+        }
+
+        .zhiying_img .guanbi {
+            position: fixed;
+            top: -3px;
+            width: 40px;
+            text-align: center;
+            right: -4px;
+            font-weight: bold;
+        }
+
+        .appDownLoadnew .zqq_img {
+
+            width: 50px;
+            height: 50px;
+        }
+
+        .zqq_box {
+            height: 70px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!--<div id="app">
+    <div class="appDownLoad">
+        <a id="ddown" href="#"><img src="static/picture/btn8.png" alt=""></a>
+    </div>
+</div>-->
+
+    <div class="appnew">
+        <div class="box">
+            <img class="bg" src="./static/images/bg6.png" alt="">
+            <div class="content">
+                <img class="yhtb" src="./static/picture/whdkt6.png" alt="">
+            </div>
+        </div>
+        <div class="appDownLoadnew">
+            <div class="shuomin zhiying">"未受信任的企业级开发者"的解决办法</div>
+            <div class="shuomin home none">正在安装，请按Home 键在桌面查看</div>
+            <a id="ddown" href="#"><img src="static/picture/btn8.png" alt=""></a>
+            <div class="zqq_box">
+                <img class="zqq_img" src="static/picture/zqq.gif" alt="">
+            </div>
+
+            <div class="jingao">
+                <span>X 未满18岁，严谨下载</span>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div class="zhiying_img">
+        <div>1、在手机中打开设置功能，选择”通用“</div>
+        <img src="static/picture/xiazai1.png" alt="">
+        <div>2、在通用中，选择”设备管理“</div>
+        <img src="static/picture/xiazai2.png" alt="">
+        <div>3、在描述文件与设备管理中的企业级应用分类中，选择要安装的企业应用的文件名称（与打开时的提示一致），点击进入</div>
+        <img src="static/picture/xiazai3.png" alt="">
+        <div>4、进入企业签名页面后，确认企业签名中的公司名称与应用名称后，点击信任"企业签名公司名称"</div>
+        <img src="static/picture/xiazai4.png" alt="">
+        <div class="guanbi">
+            X
+        </div>
+    </div>
+
+    <script type="text/javascript" src="static/js/jquery.js"></script>
+    <script type="text/javascript" src="static/js/clipboard.min.js"></script>
+    <!--<script type="text/javascript" src="static/js/nodrop.js"></script>-->
+    <script>
+        $(function () {
+            $('.zhiying').click(function () {
+                $('.zhiying_img').css('display', 'block');
+            });
+
+            $('.guanbi').click(function () {
+                $('.zhiying_img').css('display', 'none');
+            });
+
+            var is = true;
+            $('#ddown img').click(function () {
+                if (is) {
+                    is = false;
+                    $('#ddown').css('display', 'none');
+                    $('.zqq_box').css('display', 'block');
+                    setTimeout(xianshi, 5000);
+                }
+
+            });
+
+            function xianshi() {
+                $('.home').css('display', 'block');
+                $('.zqq_box').css('display', 'none');
+                $('#ddown').css('display', 'block');
+                $('#ddown img').attr('src', 'https://mimilive.oss-cn-shenzhen.aliyuncs.com/statics/cps/files/tjxr.png');
+                $('#ddown').attr('href', 'https://vip.bbmmt.cn/static/app/app.mobileprovision');
+            }
+
+
+            var _hmt = _hmt || [];
+            (function () {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?faeac48782b52accb5b3285fd741a99c";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+            $(document).ready(function () {
+                var data = [];
+                var name, value;
+                var str = location.href; //取得整个地址栏
+                var num = str.indexOf("?");
+                if (num != '-1') {
+                    str = str.substr(num + 1);
+                    var arr = str.split("&");
+                    for (var i = 0; i < arr.length; i++) {
+                        num = arr[i].indexOf("=");
+                        if (num > 0) {
+                            name = arr[i].substring(0, num);
+                            value = arr[i].substr(num + 1);
+                            data[name] = value;
+                        }
+                    }
+                }
+                var id = data['id'];
+
+                var browser = {
+                    versions: function () {
+                        var u = navigator.userAgent,
+                            app = navigator.appVersion;
+                        return {
+                            trident: u.indexOf('Trident') > -1, //IE内核
+                            presto: u.indexOf('Presto') > -1, //opera内核
+                            webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                            gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1,//火狐内核
+                            mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+                            ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                            android: u.indexOf('Android') > -1 || u.indexOf('Adr') > -1, //android终端
+                            iPhone: u.indexOf('iPhone') > -1, //是否为iPhone或者QQHD浏览器
+                            iPad: u.indexOf('iPad') > -1, //是否iPad
+                            webApp: u.indexOf('Safari') == -1, //是否web应该程序，没有头部与底部
+                            weixin: u.indexOf('MicroMessenger') > -1, //是否微信 （2015-01-22新增）
+                            qq: u.match(/\sQQ/i) == " qq" //是否QQ
+                        };
+                    }(),
+                    language: (navigator.browserLanguage || navigator.language).toLowerCase()
+                };
+
+                function setDownloadUrl() {
+                    var url = "//a.app.qq.com/o/simple.jsp?pkgname=cn.mimilive.sysm";
+
+                    if (0 && browser.versions.weixin) {
+                        if (typeof weixin_url != "undefined") {
+                            url = weixin_url;
+                        }
+                    } else if (browser.versions.ios) {
+                        if (typeof ios_url != "undefined") {
+                            url = ios_url;
+                        }
+                    } else if (browser.versions.android) {
+                        if (typeof an_url != "undefined") {
+                            url = an_url;
+                        }
+                    }
+                    return url;
+                }
+
+                function cliptext(id) {
+                    if (id != '' && id != 'undefined') {
+                        return "FromUri@mimilive://inviter?id=" + id + "&ua=" + encodeURI(navigator.userAgent);
+                    } else {
+                        return '';
+                    }
+                }
+
+                var url = setDownloadUrl();
+                $("#ddown").attr("href", url);
+                $("#ddown").click(function () {
+                    var clipboard = new ClipboardJS('#ddown', {
+                        text: function () {
+                            return cliptext(id);
+                        }
+                    });
+
+                    window.location.href = url;
+                });
+
+                function loadScript(url, callback) {
+                    var script = document.createElement("script");
+                    script.type = "text/javascript";
+                    if (typeof (callback) != "undefined") {
+                        if (script.readyState) {
+                            script.onreadystatechange = function () {
+                                if (script.readyState == "loaded" || script.readyState == "complete") {
+                                    script.onreadystatechange = null;
+                                    callback();
+                                }
+                            };
+                        } else {
+                            script.onload = function () {
+                                callback();
+                            };
+                        }
+                    }
+                    script.src = url;
+                    document.body.appendChild(script);
+                }
+
+                loadScript("http://ad.mimilive.cn:1280/agents/js.php?_=" + Math.random(), function () {
+                    var url = setDownloadUrl();
+                    $("#ddown").attr("href", url);
+                    $("#ddown").click(function () {
+                        var clipboard = new ClipboardJS('#ddown', {
+                            text: function () {
+                                return cliptext(id);
+                            }
+                        });
+
+                        window.location.href = url;
+                    });
+                    $("#app").click(function () {
+                        var clipboard = new ClipboardJS('#app', {
+                            text: function () {
+                                return cliptext(id);
+                            }
+                        });
+                        window.location.href = url;
+                    });
+
+
+                });
+
+
+            });
+
+
+        });
+    </script>
+    <script>
+            $(window).resize(function () {
+                console.log($(window).width());
+                console.log($(window).height());
+            });
+      
+
+    </script>
+</body>
+
+</html>
