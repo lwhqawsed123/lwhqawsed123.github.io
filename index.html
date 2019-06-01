@@ -47,7 +47,7 @@
 
         .appnew {
             position: fixed;
-            width: 100%;
+            /* width: 100%; */
             height: 100%;
             background: #feaaa8;
             min-height: 100%;
@@ -56,29 +56,31 @@
 
         .appnew .box {
             position: relative;
-            width: 100%;
+            /* width: 100%; */
             height: 100%;
         }
 
         .appnew img.bg {
-            width: 100%;
+            /* width: 100%; */
             height: 100%;
+            display: block;
+            margin: 0 auto;
         }
 
-        .appnew .content {
+        /* .appnew .content {
             position: absolute;
             top: 19%;
             width: 86%;
-            height: 48%;
+            height: 42%;
 
             left: 50%;
-            margin-left: -43%;
-        }
+            margin-left: -50%;
+        } */
 
-        .appnew img.yhtb {
+        /* .appnew img.yhtb {
             width: 100%;
 
-        }
+        } */
 
         .appDownLoadnew {
             position: absolute;
@@ -113,7 +115,7 @@
             line-height: 20px;
             text-align: center;
             margin: 0 auto;
-            
+
         }
 
         .appDownLoadnew .jingao span {
@@ -180,9 +182,9 @@
 
     <div class="appnew">
         <div class="box">
-            <img class="bg" src="./static/images/bg6.png" alt="">
+            <img class="bg" src="./static/images/bg7.png" alt="">
             <div class="content">
-                <img class="yhtb" src="./static/picture/whdkt6.png" alt="">
+                <!-- <img class="yhtb" src="./static/picture/whdkt6.png" alt=""> -->
             </div>
         </div>
         <div class="appDownLoadnew">
@@ -388,12 +390,21 @@
         });
     </script>
     <script>
-            // $(window).resize(function () {
-                console.log($(document).width());
-                console.log($(document).height());
-            // });
-            let height=$(document).height()
-                $(".appnew").css("min-height",height)
+        var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        var h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+        console.log(w);
+        console.log(h);
+        // $(window).resize(function () {
+        // console.log($(document).width());
+        // console.log($(document).height());
+        // });
+        let height = $(document).height()
+        let width = $(document).width()
+        $(".appnew").css("min-height",h)
+        $(".appnew").css("min-width",w)
+        $(".appDownLoadnew").css("bottom",(h/50)+"px")
+        
+
 
     </script>
 </body>
