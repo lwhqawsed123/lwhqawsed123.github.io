@@ -62,7 +62,7 @@
 
         .appnew img.bg {
             /* width: 100%; */
-            height: 100%;
+            /* height: 100%; */
             display: block;
             margin: 0 auto;
         }
@@ -398,13 +398,23 @@
         // console.log($(document).width());
         // console.log($(document).height());
         // });
-        let height = $(document).height()
-        let width = $(document).width()
-        $(".appnew").css("min-height",h)
-        $(".appnew").css("min-width",w)
-        $(".appDownLoadnew").css("bottom",(h/50)+"px")
-        
-
+        // $(".appnew").css("min-height", h)
+        // $(".appnew").css("min-width", w)
+        // $(".appDownLoadnew").css("bottom", (h / 50) + "px")
+        if (h / w * 10 > 18) {
+            $(".appnew").css("min-width", w)
+            $(".appnew .bg").css("width", "100%")
+            $(".appnew").css("min-height", "")
+            $(".appDownLoadnew").css("bottom", (h / 50) + "px")
+        } else {
+            $(".appnew").css("min-height", h)
+            $(".appnew .bg").css({
+                width:"100%",
+                height:"100%"
+            })
+            $(".appnew").css("min-width", w)
+            $(".appDownLoadnew").css("bottom", (h / 50) + "px")
+        }
 
     </script>
 </body>
